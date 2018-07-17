@@ -1,0 +1,6 @@
+applications:
+  - name: Cloud-PCF-Mail
+    path: target/MailSend-0.0.1-SNAPSHOT.jar    
+    memory: 1024m
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+     
