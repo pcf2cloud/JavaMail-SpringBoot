@@ -14,7 +14,7 @@ public class MailConfig {
 	@Autowired
 	private  JavaMailSender mailSender;
 	
-	
+	// connect mail server
 	@Autowired
 	public MailConfig(JavaMailSender mailSender) {
 		
