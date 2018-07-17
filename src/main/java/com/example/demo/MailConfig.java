@@ -34,7 +34,7 @@ public class MailConfig {
 		// TODO Auto-generated method stub
 		
 		SimpleMailMessage mail = new SimpleMailMessage();
-		mail.setTo("xxxxx@gmail.com");
+		mail.setTo("manvendra80386@gmail.com");
 		mail.setSubject(subject);
 		mail.setText(text);
 		
