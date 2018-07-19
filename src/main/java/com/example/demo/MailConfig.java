@@ -21,10 +21,18 @@ public class MailConfig {
 		this.mailSender = mailSender;
 	}
 	
+	@RequestMapping("/")
+	public String appStatus() {
+		
+		
+		
+		return "application successfully deployed in cloud foundry";
+	}
+	
 	@RequestMapping("/Send")
 	public String mailSend() {
 		
-		SimpleMailMessage mail = 	getSimpleMailMessage(String.format("%s is started ", "Bye"),String.format("per your request, we are informing you that %s is starting ", "Hello"));
+		SimpleMailMessage mail = 	getSimpleMailMessage(String.format("%s from  cloud ", "Mail"),String.format("per your request, we are informing you that %s is starting ", "application"));
 			
 		mailSender.send(mail);
 		
